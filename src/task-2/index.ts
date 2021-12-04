@@ -6,33 +6,8 @@
  * 	  все остальные файлы должны подгрузиться асинхронно по цепочке, используя requireJS.
  */
 
-class SettingValue {
-    public property1: string;
-    public property2: string;
-
-    constructor(p1: string, p2: string) {
-        this.property1 = p1;
-        this.property2 = p2;
-    }
-}
-
-class Setting {
-    public key: string;
-    public value: SettingValue;
-
-    constructor(k: string, ov: SettingValue) {
-        this.key = k;
-        this.value = ov;
-    }
-}
-
-
-class Example {
-    public title: string;
-    public id: number;
-    private _setting: Setting;
-
-    constructor(s: Setting) {
-        this._setting = s;
-    }
-}
+import * as lib from './lib/index';
+const a = new lib.Example(new lib.Setting('ff', new lib.SettingValue('ab', 'ba')));
+a.id = 14;
+a.title = 'fubis';
+console.log(a.title, a.id);
