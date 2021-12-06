@@ -1,4 +1,4 @@
-declare namespace Custom {
+export declare namespace Custom {
     interface User {
         age: number;
         name: string;
