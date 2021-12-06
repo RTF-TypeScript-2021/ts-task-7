@@ -6,33 +6,13 @@
  * 	  все остальные файлы должны подгрузиться асинхронно по цепочке, используя requireJS.
  */
 
-class SettingValue {
-    public property1: string;
-    public property2: string;
+import { SettingValue } from "./SettingValue";
+import { Example } from "./Example";
+import { Setting } from "./Setting";
 
-    constructor(p1: string, p2: string) {
-        this.property1 = p1;
-        this.property2 = p2;
-    }
-}
-
-class Setting {
-    public key: string;
-    public value: SettingValue;
-
-    constructor(k: string, ov: SettingValue) {
-        this.key = k;
-        this.value = ov;
-    }
-}
-
-
-class Example {
-    public title: string;
-    public id: number;
-    private _setting: Setting;
-
-    constructor(s: Setting) {
-        this._setting = s;
-    }
-}
+const newSettingValue = new SettingValue("лол", "кек");
+const newSetting = new Setting("чебурек", newSettingValue);
+const newExample = new Example(newSetting);
+newExample.id = 2302;
+newExample.title = "Почему наркоманы любят крапиву? ОНА КОЛЕТСЯ"
+console.log(newExample.id, newExample.title)
