@@ -1,4 +1,4 @@
-import { Custom } from './typing';
+import {Custom} from './typing';
 
 Custom.user.upAgeByYear();
 console.log(Custom.user);

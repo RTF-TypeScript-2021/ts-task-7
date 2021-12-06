@@ -2,6 +2,7 @@ export declare namespace Custom {
     interface IUser {
         age: number;
         name: string;
+        
         upAgeByYear(): void;
     }
     
