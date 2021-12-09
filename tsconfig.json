@@ -1,20 +1,21 @@
 {
     "include": [
-        "./src/**/*"
+        "./src/**/*",
+        "node_modules/reflect-metadata"
     ],
     "exclude": [
         "node_modules",
-        "src/task-1/specs"
+        "src/task-2/specs"
     ],
     "compilerOptions": {
         "target": "es6",
-        "module": "commonjs",
+        "module": "amd",
         "lib": [
             "es6",
             "dom"
         ],
         "allowJs": false,
-        "outDir": "build",
+        "outDir": "dist",
         "rootDir": ".",
         "strict": false,
         "noImplicitAny": true,
