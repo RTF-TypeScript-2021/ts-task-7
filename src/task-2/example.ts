@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Setting } from "./setting";
 import { SettingValue } from "./settingValue";
 
