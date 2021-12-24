@@ -9,3 +9,12 @@
  export * from './SettingValue';
  export * from './Example';
  export * from './Setting';
+
+
+ const d = new Promise((resolve, reject)=>{
+     resolve(1)
+ }).then(value => {
+     return +value*2;
+ })
+
+

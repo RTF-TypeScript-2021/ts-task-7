@@ -8,18 +8,17 @@
     ],
     "compilerOptions": {
         "target": "es6",
-        "module": "commonjs",
+        "module": "amd",
         "lib": [
             "es6",
             "dom"
         ],
         "allowJs": false,
-        "outDir": "build",
+        "outDir": "dist",
         "rootDir": ".",
         "strict": false,
         "noImplicitAny": true,
         "esModuleInterop": true,
-        "resolveJsonModule": true,
         "experimentalDecorators": true
     }
 }
